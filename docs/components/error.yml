@@ -1,0 +1,14 @@
+ErrorResponse:
+  type: array
+  items:
+    $ref: '#/Error'
+Error:
+  properties:
+    code:
+      type: string
+    message:
+      type: string
+    metadata:
+      type: object
+  required:
+        - error

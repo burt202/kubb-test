@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: V2 API
+  version: '1.0'
+servers:
+  - url: 'https://example.com/v2'
+paths:
+  /login:
+    post:
+      summary: Login user
+      tags:
+        - User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Successfull login
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthTokenResponse'
+        '401':
+          description: Invalid user credentials
+          content:
+            application/json:
+              schema:
+                $ref: ./components/error.yml#/ErrorResponse
+components:
+  schemas:
+    LoginRequest:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+      required:
+        - email
+        - password
+    AuthTokenResponse:
+      type: object
+      properties:
+        authToken:
+          type: string
+      required:
+        - authToken

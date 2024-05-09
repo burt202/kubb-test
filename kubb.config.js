@@ -4,7 +4,7 @@ module.exports = defineConfig(() => {
   return {
     root: '.',
     input: {
-      path: 'docs.yml'
+      path: 'docs/main.yml'
     },
     output: {
       path: 'generated/',
