@@ -22,12 +22,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AuthTokenResponse'
-        '401':
-          description: Invalid user credentials
-          content:
-            application/json:
-              schema:
-                $ref: ./components/error.yml#/ErrorResponse
 components:
   schemas:
     LoginRequest:
