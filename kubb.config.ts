@@ -14,12 +14,12 @@ export default defineConfig({
   },
   plugins: [
     pluginOas({
-      generators: []
+      generators: [],
     }),
     pluginTs({
       output: {
         path: "./types.ts",
-        barrelType: false
+        barrelType: 'propagate'
       }
     })
   ]
