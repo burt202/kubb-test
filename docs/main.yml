@@ -24,6 +24,10 @@ paths:
                 $ref: '#/components/schemas/AuthTokenResponse'
 components:
   schemas:
+    LoginTypeEnum:
+      type: string
+      enum: [user, admin]
+
     LoginRequest:
       type: object
       properties:
@@ -31,9 +35,12 @@ components:
           type: string
         password:
           type: string
+        type:
+          $ref: '#/components/schemas/LoginTypeEnum'
       required:
         - email
         - password
+        - type
     AuthTokenResponse:
       type: object
       properties:
