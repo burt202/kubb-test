@@ -10,6 +10,9 @@ export default defineConfig({
   output: {
     path: 'generated/',
     barrelType: 'all',
+    extension: {
+      '.ts': ''
+    },
     clean: true
   },
   plugins: [
