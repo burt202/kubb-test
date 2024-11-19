@@ -20,7 +20,8 @@ export default defineConfig({
       output: {
         path: "./types.ts",
         barrelType: 'propagate'
-      }
+      },
+      enumSuffix: ''
     })
   ]
 })
