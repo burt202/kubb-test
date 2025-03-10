@@ -24,6 +24,9 @@ paths:
                 $ref: '#/components/schemas/AuthTokenResponse'
 components:
   schemas:
+    AITypeEnum:
+      type: string
+      enum: [foo, bar]
     LoginTypeEnum:
       type: string
       enum: [user, admin]

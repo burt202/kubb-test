@@ -5,9 +5,9 @@
     "generate": "kubb generate"
   },
   "devDependencies": {
-    "@kubb/cli": "^3.0.11",
-    "@kubb/core": "^3.0.11",
-    "@kubb/plugin-oas": "^3.0.11",
-    "@kubb/plugin-ts": "^3.0.11"
+    "@kubb/cli": "^3.6.1",
+    "@kubb/core": "^3.6.1",
+    "@kubb/plugin-oas": "^3.6.1",
+    "@kubb/plugin-ts": "3.4.3"
   }
 }
